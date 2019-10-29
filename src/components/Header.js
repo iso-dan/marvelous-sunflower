@@ -7,7 +7,6 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id='header' className='header container'>
-                <h1>I am the master</h1>
                 <Link to={safePrefix('/')} className='logo'>{_.get(this.props, 'pageContext.site.data.header.content')}</Link>
                 {(_.get(this.props, 'pageContext.menus.main') && _.get(this.props, 'pageContext.site.data.header.has_nav')) &&
                 <nav>
